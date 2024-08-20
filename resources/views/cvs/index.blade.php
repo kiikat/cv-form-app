@@ -28,8 +28,8 @@
                         <th scope="col">Job Experience</th>
                         <th scope="col">Practical skills</th>
                         <th scope="col">Language</th>
-                        <th scope="col">Second Language (optional)</th>
-                        <th scope="col">Third Language (optional)</th>
+                        <th scope="col">Second Language</th>
+                        <th scope="col">Third Language</th>
                       </tr>
                     </thead>
                     <tbody>

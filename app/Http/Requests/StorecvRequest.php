@@ -27,12 +27,12 @@ class StorecvRequest extends FormRequest
             'age' => 'required|integer|min:18|max:99',
             'phone' => 'required|string',
             'email' => 'required|string|max:50|unique:cvs,email',
-            'education',
-            'experience',
-            'skills',
+            'education'=> 'required|string',
+            'experience'=> 'required|string',
+            'skills'=> 'required|string',
             'language1'=> 'required|string|max:15',
-            'language2',
-            'language3'
+            'language2'=> 'required|string',
+            'language3'=> 'required|string'
         ];
     }
 }

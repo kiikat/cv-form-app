@@ -119,7 +119,7 @@
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="language2" class="col-md-4 col-form-label text-md-end text-start">Second Language (optional) </label>
+                        <label for="language2" class="col-md-4 col-form-label text-md-end text-start">Second Language </label>
                         <div class="col-md-6">
                           <input type="language2" class="form-control @error('language2') is-invalid @enderror" id="language2" name="language2" value="{{ $cv->language2 }}">
                             @error('language2')
@@ -129,7 +129,7 @@
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="language3" class="col-md-4 col-form-label text-md-end text-start">Third Language (optional) </label>
+                        <label for="language3" class="col-md-4 col-form-label text-md-end text-start">Third Language </label>
                         <div class="col-md-6">
                           <input type="language3" class="form-control @error('language3') is-invalid @enderror" id="language3" name="language3" value="{{ $cv->language3 }}">
                             @error('language3')

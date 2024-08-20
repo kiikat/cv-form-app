@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
         Schema::create('cvs', function (Blueprint $table) {
@@ -16,21 +14,19 @@ return new class extends Migration
             $table->string('name');
             $table->string('surname');
             $table->integer('age');
-            $table->string('phone')->change();;
-            $table->string('email')->unique()->change();
-            $table->text('education')->nullable();
-            $table->text('experience')->nullable();
-            $table->text('skills')->nullable();
+            $table->string('phone');
+            $table->string('email');
+            $table->text('education');
+            $table->text('experience');
+            $table->text('skills');
             $table->string('language1');
-            $table->string('language2')->nullable();
-            $table->string('language3')->nullable();
+            $table->string('language2');
+            $table->string('language3');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down(): void
     {
         Schema::dropIfExists('cvs');
